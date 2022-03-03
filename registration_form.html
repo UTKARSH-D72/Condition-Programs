@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form for Chetu</title>
+    <style>
+        label{font-weight:bold}
+    </style>
+    <script src="script.js"> </script>
+</head>
+<body >
+    <center> <header ><hr> <h2>Registration for Chetu India</h2></header><br><hr>
+    <form id="form" action="/" onsubmit="registration()">
+        <!-- name -->
+    <label for="fname">First Name:-</label> 
+    <input type="text" id='fname' placeholder="Full Name" required minlength="3" maxlength="10">
+   <label for="lname">Last Name:-</label>
+   <input type="text"id="lname" placeholder="Last Name" required minlength="3" maxlength="10"><br><br>
+        <!-- phone and email -->
+   <label for="phoneNo">Phone No:-</label>
+   <input type="text" id='phone' placeholder="Phone No">
+   <label for="email">Email:-</label>
+   <input type="email" id="email" placeholder="Email"><br><br>
+        <!-- dob and gender -->
+   <label for="dob">Date of Birth:-</label>
+   <input type="date" id='dob' name="dob" id="dob">
+   <label for="gender">Gender:-</label>
+   <input type="radio"  value="male" name="gender" class="gender">Male
+   <input type="radio" value="female"name="gender" class="gender">female
+   <input type="radio" value="other "name="gender" class="gender">Other<br><br>
+  <!-- catagory  -->
+  <label for="category">Category</label>
+  <select id="cat">
+      <option>OBC</option>
+      <option>Genral</option>
+      <option>SC/ST</option>
+      </select>
+  <input type="submit" onclick="registration()" value="Submit" >
+  <input type="reset" value="Reset" ></center>
+</form><hr>
+<span><h4 id="output"></h4></span>
+
+
+</body>
+
+</html>
